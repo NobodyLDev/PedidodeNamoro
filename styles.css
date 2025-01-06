@@ -111,11 +111,12 @@ body {
 }
 
 .shape {
-  background-color: #f4a241; /* Fundo amarelo */
-  width: 55%; /* Ajuste de largura */
-  padding: 0px 40px; /* Espaçamento interno */
+   background-color: #f4a241; /* Fundo amarelo */
+  padding: 0px 50px; /* Espaçamento interno */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border-radius: 150px 0px 0px 150px; /* Curvatura arredondada no lado direito */
+  min-height: 100%; /* Altura mínima para expandir com o conteúdo */
+  height: auto; /* Ajusta conforme necessário */
 
 }
 .container-text h1{
@@ -154,7 +155,7 @@ body {
 }
 
 .shape p{
-  padding: 0px 60px;
+  padding: 0px px;
 
 }
 .container-text p{
@@ -210,4 +211,37 @@ body {
 }
 .left-shapemusic h1{
   padding-left: 290px;
+}
+.main-content-div{
+  display: flex;
+  height: calc(100vh - 50px); /* Altura total menos a altura da navbar */
+}
+.left-shape-div{
+  background-color: #f4a241; /* Cor amarela */
+  width: 40%; /* Ocupa 60% da largura da tela */
+  border-radius: 0 150px 150px 0; /* Curvatura arredondada no lado direito */
+  margin-top: 60px;
+}
+.right-content-div{
+  background-color: #d3d3d3; /* Mesma cor do fundo */
+  flex: 1; /* Ocupa o restante do espaço */
+  margin-top: 60px;
+}
+.left-shape-div h1{
+  font-size: 8em;
+  color: #7c4709;
+  padding-left: 60px;
+}
+.right-content-div h2{
+  color: #646262;
+  padding: 100px;
+}
+.shape p{
+  font-size: 17px;
+}
+.right-contenttext p {
+  font-size: 20px;
+}
+.container-text p {
+  font-size: 20px;
 }
