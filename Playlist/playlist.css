@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Fundo cinza claro */
+  }
+  
+  .navbar {
+    background-color: #e0ded6; /* Cor da navbar */
+    padding: 30px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding: 30px 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #eb9833;
+    font-size: 16px;
+    font-weight: bold;
+    /*
+    text-decoration: none; 
+    padding: 10px 20px;
+    color: white;
+    background-color: #f4a241; 
+    border-radius: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s; */
+  }
+  .navbar ul li a:hover {
+    color: #cc832a;
+    /*
+    background-color: #d68b2e; 
+    transform: scale(1.05); */
+  }
+  /*
+  .navbar ul li a:active {
+    background-color: #c7822f;
+  }
+  */
+
+.main-contentbox{
+    display: flex;
+    height: calc(100vh - 50px); /* Altura total menos a altura da navbar */
+    margin-top: 40px;
+  }
+  .left-shapemusic{
+      background-color: #f4a241; /* Cor amarela */
+      width: 50%; /* Ocupa 60% da largura da tela */
+      border-radius: 0 150px 150px 0; /* Curvatura arredondada no lado direito */
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza horizontalmente os elementos */
+      justify-content: center; /* Centraliza verticalmente os elementos */
+      text-align: center; /* Centraliza o texto */
+  }
+
+.left-shapemusic h1 {
+  padding-left: 0; /* Remove o espaçamento lateral desnecessário */
+  margin: 10px 0; /* Adiciona margem ao título */
+}
+  .right-contentmusic{
+    background-color: #d3d3d3; /* Mesma cor do fundo */
+    flex: 1; /* Ocupa o restante do espaço */
+    margin-top: 60px;
+    padding: 20px;
+    display: flex; /* Habilita o flexbox */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os itens ao topo */
+  }
+  .right-contentmusic h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    color: #eb9833;
+  }
+  .inner-imagemusic{
+    width: 40%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto; /* Centraliza a imagem verticalmente e horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombras para destacar a imagem */
+   
+  }
+  .spotify-button {
+    background-color: #1DB954;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Espaço entre o título e o botão */
+  }
+  
+  .spotify-button:hover {
+    background-color: #18aa4b
+  }
+  .right-contentmusic .music-item {
+    display: flex;
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Espaça os elementos dentro de cada item */
+    margin-bottom: 20px; /* Espaço entre os itens de música */
+    width: 100%; /* Ocupa 100% da largura */
+    max-width: 500px; /* Limita a largura para centralizar melhor */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 1px solid #ccc; /* Adiciona borda leve (opcional) */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para destaque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destaque */
+}
+.right-contentmusic img {
+  width: 50px; /* Define o tamanho da imagem */
+  height: 50px; /* Garante que a imagem seja quadrada */
+  margin-right: 15px; /* Espaço entre a imagem e o texto */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.right-contentmusic h2 {
+  margin: 0; /* Remove margens extras */
+  font-size: 18px; /* Ajuste do tamanho da fonte */
+  color: #000; /* Cor do texto */
+}
+.play-button {
+  background-color: #18aa4b; /* Cor verde do Spotify */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px; /* Espaço entre o botão e o título */
+}
+
+.play-button:hover {
+  background-color: #118b3c
+}

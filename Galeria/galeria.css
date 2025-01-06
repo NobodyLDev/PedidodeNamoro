@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Fundo cinza claro */
+}
+.container-imagebox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    gap: 10px; /* Espaçamento entre imagens */
+  
+  }
+  .big-div{
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  .big-div h1{
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+    color: #eb9833;
+  }
+  .container-imagebox img {
+    max-width: 400px; /* Define um limite máximo para largura */
+    max-height: 400px; /* Define um limite máximo para altura */
+    object-fit: cover; /* Garante que a imagem preencha seu espaço sem distorção */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .container-imagebox img:hover {
+    transform: rotate(15deg) scale(1.05); /* Leve rotação e aumento no tamanho */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
+  
+  /* Estilo da modal */
+  .modal {
+    display: none; /* Oculta a modal inicialmente */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Largura da imagem expandida */
+    max-width: 700px; /* Tamanho máximo */
+    animation: fadeIn 0.5s; /* Animação de aparecer */
+  }
+  
+  .modal-content:hover {
+    transform: scale(1.1); /* Leve zoom na imagem da modal */
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .modal-close:hover {
+    color: red;
+  }
+  
+  /* Animação de fade */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .navbar {
+    background-color: #e0ded6; /* Cor da navbar */
+    padding: 30px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding: 30px 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #eb9833;
+    font-size: 16px;
+    font-weight: bold;
+    /*
+    text-decoration: none; 
+    padding: 10px 20px;
+    color: white;
+    background-color: #f4a241; 
+    border-radius: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s; */
+  }
+  .navbar ul li a:hover {
+    color: #cc832a;
+    /*
+    background-color: #d68b2e; 
+    transform: scale(1.05); */
+  }

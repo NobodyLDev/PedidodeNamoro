@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso site</title>
+  <link rel="shortcut icon" type="imagex/png" href="./Premium Vector _ Chamomile flat vector icon on a grey background with shadow.jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="./index.html">Inicial</a></li>
+      <li><a href="./PedidoNamoro/Pedido.html">Pedido</a></li>
+      <li><a href="#animated-section-1">Você</a></li>
+      <li><a href="#animated-section-2">Nós</a></li>
+      <li><a href="./Galeria/galeria.html">Galeria</a></li>
+      <li><a href="./Playlist/playlist.html">Playlist</a></li>
+     
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="left-shape">
+      <br>
+      <br>
+      <img src="./assets/WhatsApp Image 2025-01-02 at 15.52.45.jpeg" width="150px" class="inner-image">
+    </div>
+    <div class="right-content">
+      <br>
+      <br>
+      <img src="./assets/WhatsApp Image 2025-01-02 at 15.52.48.jpeg" width="200px" class="innerimage">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div  id="animated-section-1" class="container-box animate__animated">
+    <div class="container-image">
+      <img src="./assets/WhatsApp Image 2025-01-02 at 18.37.11.jpeg" width="350px">
+    </div>
+    <div class="container-text">
+      <h1>Voce</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  
+  <div  id="animated-section-2" class="container animate__animated" >
+    <div class="right-contenttext">
+    <h1>Nos</h1>
+    <img src="./assets/WhatsApp Image 2025-01-03 at 15.38.15.jpeg" width="400px">
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="shape">
+      <br>
+      <h1>Nossa historia</h1>
+      <img src="./assets/WhatsApp Image 2025-01-03 at 15.27.05.jpeg" width="50%">
+      <br>
+      <br>
+      <br>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    </div>
+   
+  </div>
+  
+<br>
+<br>
+<br>
+  <!-- Script deve estar no final para garantir que o DOM esteja carregado -->
+  <script>
+   const sections = ['animated-section-1', 'animated-section-2'];
+
+sections.forEach((id) => {
+  const section = document.getElementById(id);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        section.classList.add('animate__bounceInDown');
+        observer.unobserve(section);
+      }
+    });
+  }, { threshold: 0.20});
+
+  observer.observe(section);
+});
+  </script>
+ 
+</body>
+</html>

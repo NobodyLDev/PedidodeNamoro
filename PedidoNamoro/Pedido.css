@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d3d3d3; /* Fundo cinza claro */
+  overflow: hidden; /* Impede o scroll caso o botão saia da tela */
+}
+
+.navbar {
+  background-color: #e0ded6; /* Cor da navbar */
+  padding: 30px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #eb9833;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #cc832a;
+}
+
+.main-content {
+  display: flex;
+  height: calc(100vh - 50px); /* Altura total menos a altura da navbar */
+}
+
+.left-shape {
+  background-color: #f4a241; /* Cor amarela */
+  width: 60%; /* Ocupa 60% da largura da tela */
+  border-radius: 0 150px 150px 0; /* Curvatura arredondada no lado direito */
+  margin-top: 60px;
+}
+
+.right-content {
+  flex: 1; /* Ocupa o restante do espaço */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  position: relative;
+  gap: 70px; /* Espaçamento horizontal entre os botões */
+  justify-content: center; /* Centraliza os botões no contêiner */
+  align-items: center; /* Alinha os botões verticalmente no centro */
+
+}
+
+.button {
+  padding: 30px 50px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid #ac5f08;
+  background-color: #eb9833;
+  transition: all 0.3s ease;
+  border-radius: 35px;
+
+}
+
+.button.yes:hover {
+  background-color: #c57416;
+ 
+}
+
+.button.no:hover {
+  background-color: #c57416;
+
+}
+
+.left-shape h1{
+  font-size: 7em;
+  color: #ac5f08;
+  padding-left: 60px ;
+
+}
